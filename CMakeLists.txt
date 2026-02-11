@@ -29,13 +29,6 @@ install(TARGETS nlink_subscriber
   DESTINATION lib/${PROJECT_NAME}
 )
 
-install(DIRECTORY include/
-  DESTINATION include/${PROJECT_NAME}
-)
-
-
-ament_export_include_directories(include/${PROJECT_NAME})
-
 ament_export_dependencies(
   rclcpp 
   std_msgs 
